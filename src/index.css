@@ -1,0 +1,92 @@
+/* index.css */
+
+/* Set full-page layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Flex container to align content properly */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation bar styling */
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: linear-gradient(to right, #1E3A8A, #4F46E5);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Logo and company name alignment */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .nav-logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-logo h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+/* Navigation links spacing */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+
+        .nav-links a:hover {
+            color: #FFD700;
+        }
+
+/* Main content should take available space */
+.main-content {
+    flex: 1;
+    padding-top: 10vh; /* Offset for fixed navbar */
+    padding-bottom: 10vh; /* Offset for fixed footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111827;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
